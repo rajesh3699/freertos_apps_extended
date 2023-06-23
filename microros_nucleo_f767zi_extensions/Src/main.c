@@ -194,7 +194,10 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+    if(HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_5))
+	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+    else
+	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
