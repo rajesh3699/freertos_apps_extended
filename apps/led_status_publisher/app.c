@@ -65,6 +65,10 @@ void appMain(void * arg)
 	msg.data = 0;
 
 	while(1){
+		  if(HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_5))
+	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+    else
+	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
 		rclc_executor_spin_some(&executor, RCL_MS_TO_NS(100));
 		usleep(100000);
 	}
