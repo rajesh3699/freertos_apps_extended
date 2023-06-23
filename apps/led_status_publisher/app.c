@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
+#include "stm32f7xx_hal.h"
 
 #include <rcl/rcl.h>
 #include <rcl/error_handling.h>
