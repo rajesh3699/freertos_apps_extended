@@ -148,7 +148,7 @@ void appMain(void *argument)
 			   else
 			  {
 				HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_RESET);
-			  	outcoming_ping.frame_id.data="OFF":
+			  	outcoming_ping.frame_id.data="OFF";
 			  }
 		usleep(10000);
 	}
