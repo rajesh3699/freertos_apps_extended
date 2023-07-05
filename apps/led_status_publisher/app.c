@@ -5,9 +5,11 @@
 
 #include <std_msgs/msg/header.h>
 
+
 #include <stdio.h>
 #include <unistd.h>
 #include <time.h>
+#include "stm32f7xx_hal.h"
 
 #ifdef ESP_PLATFORM
 #include "freertos/FreeRTOS.h"
