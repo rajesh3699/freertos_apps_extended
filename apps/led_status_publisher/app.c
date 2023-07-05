@@ -68,10 +68,9 @@ void appMain(void * arg)
 		 
 
 		rclc_executor_spin_some(&executor, RCL_MS_TO_NS(100));
-		 if(HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13))
-	  		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_SET);
-	  	else
-	  		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_RESET);
+		
+	  	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_SET);
+	  	
 		usleep(100000);
 	}
 
