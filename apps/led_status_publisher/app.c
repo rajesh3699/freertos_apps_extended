@@ -140,6 +140,7 @@ void appMain(void *argument)
 
 	while(1){
 		rclc_executor_spin_some(&executor, RCL_MS_TO_NS(10));
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_SET);
 		usleep(10000);
 	}
 
